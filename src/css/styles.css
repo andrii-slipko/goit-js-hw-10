@@ -1,18 +1,79 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  padding-left: 20px;
+  padding-top: 20px;
+}
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+.container {
+  text-align: left;
+}
+.input-cont {
+  display: flex;
+  flex-direction: row;
+gap: 20px;
+}
+.datetime-picker {
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.start-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: gray;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  height: 45px;
+}
+
+.start-button:hover {
+  background-color: darkgray;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.field {
+  text-align: center;
+  background-color: #f0f0f0;
+border: none;
+ 
+}
+
+.value {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.nav-link {
+  color: black;
+  font-size: 18;
+  font-weight: 700;
+  text-decoration: none;
+margin-top: 20px;
+}
+ul {
+list-style-type: none;
+}
+.sub-btn {
+  width: 250px;
+  margin-top: 15px;
+}
+
+
+
